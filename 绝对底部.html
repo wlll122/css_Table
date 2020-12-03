@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>绝对底部设置</title>
+    <style type="text/css">
+    /*main{*/
+    /*    width: 100%;*/
+    /*    height: 392px;*/
+    /*}*/
+    /*.main > header,*/
+    /*.main > section,*/
+    /*.main > footer{*/
+    /*    padding: .1em calc(50% - 392px);*/
+    /*    text-align: justify;*/
+    /*    hyphens: auto;*/
+    /*}*/
+    /*header{*/
+    /*    text-align: center;*/
+    /*}*/
+    /*section{*/
+    /*    box-sizing: border-box;*/
+    /*    min-height: calc(100% - 59px - 107px);*/
+    /*}*/
+    /*footer{*/
+    /*    color: white;*/
+    /*    background: #747e7f;*/
+    /*}*/
+
+    /*flex版本*/
+    main{
+        width: 100%;
+        height: 392px;
+        display: flex;
+        flex-direction: column;
+    }
+    .main > header,
+    .main > section,
+    .main > footer{
+        padding: .1em calc(50% - 329px);
+        hyphens: auto;
+    }
+    header{
+        text-align: center;
+    }
+    section{
+        flex: 1;
+    }
+    footer{
+        color: white;
+        background: #747e7f;
+    }
+    </style>
+</head>
+<body>
+<main class="main">
+    <header>
+        <h1>Site Header</h1>
+    </header>
+    <section>
+        <p>A paragraph of filler text. La la la de dah de dah de dah de la.A paragraph of filler text. La la la de dah de dah de dah de la.A paragraph of filler text. La la la de dah de dah de dah de la.A paragraph of filler text. La la la de dah de dah de dah de la.A paragraph of filler text. La la la de dah de dah de dah de la.A paragraph of filler text. La la la de dah de dah de dah de la.</p>
+        <p>A paragraph of filler text. La la la de dah de dah de dah de la.A paragraph of filler text. La la la de dah de dah de dah de la.A paragraph of filler text. La la la de dah de dah de dah de la.A paragraph of filler text. La la la de dah de dah de dah de la.A paragraph of filler text. La la la de dah de dah de dah de la.A paragraph of filler text. La la la de dah de dah de dah de la.A paragraph of filler text. La la la de dah de dah de dah de la.A paragraph of filler text.</p>
+        <p>A paragraph of filler text. La la la de dah de dah de dah de la.A paragraph of filler text. La la la de dah de dah de dah de la.A paragraph of filler text. La la la de dah de dah de dah de la.A paragraph of filler text. La la la de dah de dah de dah de la.A paragraph of filler text. La la la de dah de dah de dah de la.A paragraph of filler text. La la la de dah de dah de dah de la.</p>
+    </section>
+    <footer>
+        <p> LHammer</p>
+        <p>------------------------------------</p>
+    </footer>
+</main>
+</body>
+</html>
