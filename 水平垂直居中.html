@@ -3,8 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style type="text/css">
+    .m1{
+        width: 100%;
+        min-height: 152px;
+        display: flex;
+    }
+    .m1 > span{
+        background: #b4a078;
+        color: white;
+        padding: .3em 1em .5em;
+        box-shadow: 0 0 .5em #b4a078;
+    }
+    .grid{
+        width: 100%;
+        min-height: 152px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .grid > span{
+        background: #b4a078;
+        color: white;
+        padding: .3em 1em .5em;
+        border-radius: 3px;
+        box-shadow: 0 0 .5em #b4a078;
+    }
+    .posion{
+        width: 100%;
+        min-height: 152px;
+        position: absolute;
+    }
+    .posion > span{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+       background: #b4a078;
+        color: white;
+        padding: .3em 1em .5em;
+        border-radius: 3px;
+        box-shadow: 0 0 .5em #b4a078;
+        margin-top: -16px;
+        margin-left: -72px;
+    }
+    .cal{
+        width: 100%;
+        min-height: 200px;
+        display: flex;
+    }
+    .cal > span{
+        position: relative;
+        top: calc(50% - 16px);
+        left: calc(50% - 72px);
+        background: #b4a078;
+        color: white;
+        border-radius: 3px;
+        box-shadow: 0 0 .5em #b4a078;
+    }
+    </style>
 </head>
 <body>
-
+<h4>flex + margin auto</h4>
+<div class="m1">
+    <span>
+        flex居中,
+    </span>
+</div>
+<h3>grid布局,不限定宽高</h3>
+<div class="grid">
+    <span>Center me, please!</span>
+</div>
+<h3>绝对定位,限定宽高</h3>
+<div class="posion">
+    <span>
+        绝对定位限定宽高
+    </span>
+</div>
+<h3>Calc 实现水平垂直居中</h3>
+<div class="cal">
+    <span>Calc 实现水平垂直居中</span>
+</div>
 </body>
 </html>
